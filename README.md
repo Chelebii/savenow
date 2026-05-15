@@ -249,7 +249,7 @@ savenow/
 │   ├── preview-diff.mjs        preview-side: renders diff + pending state
 │   └── lib/memory.mjs          shared helpers
 ├── examples/                   sample inputs and outputs
-└── tests/                      zero-dep test runner + fixtures
+└── tests/run.mjs               zero-dep test runner
 ```
 
 ## Tests
@@ -258,7 +258,7 @@ savenow/
 node tests/run.mjs
 ```
 
-No test framework. The runner spawns each script against a fixture directory and compares stdout / file output to golden files.
+No test framework. Each test sets up a temporary working directory with inline input data, spawns one of the scripts as a subprocess, and asserts on the JSON it writes to stdout and the memory file on disk. You should see `12 passed, 0 failed, 12 total`.
 
 ## Contributing
 

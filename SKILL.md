@@ -176,7 +176,7 @@ Inspect the raw command argument first and pick a branch:
 
 ## List branch — `/savenow list`
 
-Unchanged from prior behavior. Call `sessions_list`, return same-topic candidate sessions only, do not write.
+Call `sessions_list` and return same-topic candidate sessions only. Do not write.
 
 ## Memory file format
 
