@@ -1,0 +1,88 @@
+name: Bug report
+description: Something in savenow doesn't work the way the docs say it should.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The more reproducible it is, the faster we can fix it.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the unexpected behavior.
+      placeholder: When I ran `/savenow apply` after a preview, ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: I expected the entries to be merged into the existing section ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: |
+        If you can, include the exact command, the entries JSON, and the memory file (or a small extract) needed to reproduce.
+        Wrap files in fenced code blocks.
+      render: text
+    validations:
+      required: false
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node version
+      description: Output of `node --version`
+      placeholder: v20.11.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other (specify in details)
+    validations:
+      required: true
+
+  - type: input
+    id: savenow-version
+    attributes:
+      label: savenow version
+      description: From package.json, or `git rev-parse --short HEAD` if you cloned the repo.
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Script output / stack trace
+      description: Paste the full output of the failing script run (stdout + stderr).
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I'm running on OpenClaw + Telegram (the only supported surface).
+          required: false
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: I'm on Node 18 or newer.
+          required: true

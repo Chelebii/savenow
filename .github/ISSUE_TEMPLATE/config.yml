@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/Chelebii/savenow/discussions
+    about: Have a question, want to share a use case, or unsure if something's a bug? Open a discussion.
+  - name: Security vulnerability
+    url: https://github.com/Chelebii/savenow/security/advisories/new
+    about: Found a vulnerability? Please report it privately, not as a public issue.

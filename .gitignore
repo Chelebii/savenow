@@ -1,0 +1,7 @@
+node_modules/
+temp/
+*.log
+.DS_Store
+
+# Local-only notes / research. Not part of the published skill.
+docs/

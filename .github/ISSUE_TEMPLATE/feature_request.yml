@@ -1,0 +1,57 @@
+name: Feature request
+description: Suggest a new feature, command form, or behavior change.
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing: this is a focused skill (OpenClaw + Telegram, zero-dependency). See [CONTRIBUTING.md](../../blob/main/CONTRIBUTING.md) for what's in/out of scope. If you're not sure, file the issue anyway.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Start with the user-facing problem, not the implementation idea.
+      placeholder: When I run `/savenow` in a long session, I want ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: How would the feature work from a user's point of view?
+      placeholder: Add a `/savenow undo` command that reverses the last apply within 5 minutes ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+      description: Other ways to solve the same problem, including doing nothing.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Does this require new runtime dependencies?
+      description: The project is intentionally zero-dependency.
+      options:
+        - "No"
+        - "Yes (please justify in the proposal)"
+        - "I'm not sure"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: I read the relevant sections of README.md and CONTRIBUTING.md.
+          required: true

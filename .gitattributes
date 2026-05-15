@@ -1,0 +1,16 @@
+# Normalize text files to LF on checkin.
+* text=auto eol=lf
+
+# Explicit settings for known text types.
+*.mjs    text eol=lf
+*.js     text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+LICENSE  text eol=lf
+
+# Treat these as binary so diffs don't try to merge them.
+*.png    binary
+*.jpg    binary
+*.gif    binary
