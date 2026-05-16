@@ -12,6 +12,16 @@
 
 Chat is cheap, memory is expensive. Most of what you say in a session is conversational glue — but every now and then a useful fix or rule gets buried in the scrollback. `savenow` is a one-command escape hatch: tap `/savenow`, glance at the diff, tap **Apply**.
 
+## Example: save public X/Twitter research
+
+If your OpenClaw + Telegram session uses [TweetClaw](https://github.com/Xquik-dev/tweetclaw) for public X/Twitter research, `savenow` can preserve the durable part after the agent work is done:
+
+1. Use TweetClaw to search tweets, search tweet replies, run user lookup, export followers, monitor tweets, or inspect media around a launch, support issue, or community thread.
+2. Decide what matters in Telegram: useful query, tweet IDs or URLs, author handles, conclusion, and next follow-up.
+3. Run `/savenow` so the memory file keeps the decision and evidence trail instead of raw timelines.
+
+Install TweetClaw separately with `openclaw plugins install @xquik/tweetclaw`. npm is the canonical install source; the [ClawHub page](https://clawhub.ai/plugins/@xquik/tweetclaw) is useful for browsing the plugin.
+
 ## Status
 
 - **0.1.0** — first public release: semantic dedupe, preview/apply flow, inline Telegram buttons. See [CHANGELOG.md](./CHANGELOG.md).

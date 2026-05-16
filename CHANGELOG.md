@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Docs: add a TweetClaw example for saving public X/Twitter research decisions and evidence trails from an OpenClaw + Telegram session.
+
 ## 0.1.0
 
 First public release. savenow is a single-purpose OpenClaw + Telegram skill: it picks durable notes from the active conversation and writes them to `memory/YYYY-MM-DD.md` with a preview-and-confirm flow.
