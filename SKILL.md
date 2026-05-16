@@ -39,6 +39,7 @@ Keep:
 - preferences and routing rules
 - important system mappings, ids, and file locations
 - decisions that will matter again later
+- public research breadcrumbs from tools such as TweetClaw: search query, tweet IDs or URLs, author handles, conclusion, and follow-up decision
 
 Skip:
 
@@ -46,6 +47,7 @@ Skip:
 - temporary plans or one-off status updates
 - repetitive back-and-forth with no lasting value
 - content already saved today in the same or very similar form
+- raw timelines, private DMs, local auth material, or copied social-media dumps
 
 ## Routing
 
